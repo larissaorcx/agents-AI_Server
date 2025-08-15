@@ -10,7 +10,7 @@ export const getRoomsRoute: FastifyPluginCallbackZod = (app) => {
         id: schema.rooms.id,
         name: schema.rooms.name,
         createdAt: schema.rooms.createdAt,
-        questionCount: count(schema.questions.id),
+        questionsCount: count(schema.questions.id),
       })
       .from(schema.rooms)
       //pega a quantidade de perguntas que cada sala tem
