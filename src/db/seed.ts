@@ -10,7 +10,7 @@ await seed(db, schema).refine((f) => {
   //populando a tabela rooms com dados fictícios
   return {
     rooms: {
-      count: 20,
+      count: 5,
       columns: {
         //colunas da tabela
         name: f.companyName(),
